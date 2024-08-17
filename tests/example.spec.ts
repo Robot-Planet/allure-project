@@ -5,11 +5,13 @@ import { basename } from 'path';
 //import { allure } from "allure-playwright";
 //import { AllureReporter } from "allure-playwright";
 //--- 2024-08-15, Test for push project to git
+//--- 2024-08-17, Add Allure-option
 
 test('has title', async ({ page }, TestInfo) => {
   await page.goto('https://playwright.dev/');
   // await page.waitForLoadState('load', {timeout: 30000});
-  await page.waitForLoadState('load', {timeout: 60000});  //--- 2024-08-15, Test for push project to git
+  // await page.waitForLoadState('load', {timeout: 60000});  //--- 2024-08-15, Test for push project to git
+  await page.waitForLoadState('load', {timeout: 30000});  //--- 2024-08-17, Add Allure-option
 
   //await allure.attachment("search-results.png", await page.screenshot(), {
   //await attachment("By Robot search-results.png", await page.screenshot(), {
