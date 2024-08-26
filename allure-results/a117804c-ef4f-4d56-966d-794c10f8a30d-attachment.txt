@@ -1,0 +1,1 @@
+Robot has title => allure.
