@@ -6,7 +6,6 @@ import { basename } from 'path';
 //import { AllureReporter } from "allure-playwright";
 //--- 2024-08-15, Test for push project to git
 //--- 2024-08-17, Add Allure-option
-//--- 2024-08-26, Testing for PR
 
 test('has title', async ({ page }, TestInfo) => {
   await page.goto('https://playwright.dev/');
