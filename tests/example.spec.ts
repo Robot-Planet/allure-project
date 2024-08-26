@@ -30,6 +30,11 @@ test('has title', async ({ page }, TestInfo) => {
   console.log('Robot has title => ' + 'allure.');
 });
 
+//--- 2024-08-26, PR
+test('Allure PR', async ({ page }, TestInfo) => {
+  console.log('Robot has PR => ' + 'allure.');
+});
+
 test('get started link', async ({ page }, TestInfo) => {
   await page.goto('https://playwright.dev/');
   await page.waitForLoadState('load', {timeout: 30000});
